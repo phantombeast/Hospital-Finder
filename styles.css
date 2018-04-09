@@ -1,0 +1,26 @@
+.navbar {
+    width: 100%;
+    margin-left: auto ;
+    margin-right: auto ;
+    background-color: #ABCDEF;
+}
+.navbar ul {
+    list-style-type: none; /*to remove bullets*/
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    width: 90%;
+    overflow: hidden;
+}
+.navbar li{
+    float: left;
+    padding: 2px;
+    width: 150px;
+    margin-left: auto ;
+    margin-right: auto ;
+}
+.container{
+    height: 800px;
+    width: 800px;
+    background-image: url("health-care-background_23-2147514433.jpg");
+}
