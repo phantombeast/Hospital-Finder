@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../styles.css">
+
+</head>
+<body>
+
+
+<div class="w3-top">
+    <div class="w3-bar w3-black w3-card">
+        <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+        <a href="index.html" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+        <a href="experience.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Experience</a>
+        <a href="stayfit.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Stay Fit</a>
+        <a href="healthmantra.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Health Mantra</a>
+        <a href="contactus.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Contact Us</a>
+        <div class="w3-dropdown-hover w3-hide-small">
+            <button class="w3-padding-large w3-button" title="More">Ambulance Locataor <i class="fa fa-caret-down"></i></button>
+            <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                <a href="js/main.html" class="w3-bar-item w3-button">Near your Area</a>
+                <a href="js/main1.html" class="w3-bar-item w3-button">Enter a particular Location</a>
+
+            </div>
+        </div>
+        <a href="signin.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Sign In</a>
+        <a href="signup.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Sign Up</a>
+
+        <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
+    </div>
+</div>
+
+
+<div class="mySlides w3-display-container w3-center">
+    <img src="7101.jpg" style="width: 100%; height: 650px">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+        <!--<h3>Health is Important</h3>-->
+        <!--<p><b>Please keep yourself and your Family Healthy</b></p>-->
+    </div>
+
+</div>
+
+
+<div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
+    <h2 class="w3-wide">Experience</h2>
+    <p class="w3-opacity"><i>Since 2016</i></p>
+    <p class="w3-justify">
+        Good nutrition is an important part of leading a healthy lifestyle. Combined with physical activity, your diet can help you to reach and maintain a healthy weight, reduce your risk of chronic diseases (like heart disease and cancer), and promote your overall health.
+        Good Health is the greatest blessing of life. Life is a weary burden to a person of broken health. The richest man with bad health always suffers and groans. He is unhappy in spite of his great wealth.
+        <div class="w3-row w3-padding-32">
+            <div class="w3-third">
+    <p>Life</p>
+    <img src="166214345.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
+</div>
+<div class="w3-third">
+    <p>is</p>
+    <img src="166214345.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
+</div>
+
+<div class="w3-third">
+    <p>Beautiful</p>
+    <img src="166214345.jpg" class="w3-round" alt="Random Name" style="width:60%">
+</div>
+
+
+<ul>
+
+    <b><li>The prevention and maintenance of physical, mental and social well-being of workers in all organisations;</li></b>
+    <b><li>Pre­vention among workers of ill-health caused by the working conditions;</li></b>
+    <b><li>Protection of work­ers in their employment from risk resulting from factors adverse to health; and</li></b>
+    <b><li>Placing and maintenance of the worker in an occupational environment adapted to his physical and psycho­logical equipment.</li></b>
+</ul>
+
+
+
+<script>
+
+    // Automatic Slideshow - change image every 4 seconds
+    var myIndex = 0;
+    carousel();
+
+    function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) {myIndex = 1}
+        x[myIndex-1].style.display = "block";
+        setTimeout(carousel, 4000);
+    }
+
+    // Used to toggle the menu on small screens when clicking on the menu button
+    function myFunction() {
+        var x = document.getElementById("navDemo");
+        if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+        } else {
+            x.className = x.className.replace(" w3-show", "");
+        }
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    var modal = document.getElementById('ticketModal');
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+</script>
+
+</body>
+</html>

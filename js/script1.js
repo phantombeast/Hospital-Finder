@@ -25,14 +25,16 @@ function initMap() {
         setPos(myLocation);
     }
 }
-var contentString = 'Number of Ambulance Availabe='+ Math.ceil((Math.random() * 10) + 1);;
+var contentString = 'Number of Ambulance Availabe='+ Math.ceil((Math.random() * 10) + 1);
+
+var source = document.getElementById("source").value;
 
 function setPos(myLocation) {
     map = new google.maps.Map(document.getElementById('map'), {
         center: myLocation,
         zoom: 10
     });
-  //  infowindow = new google.maps.InfoWindow();
+    //  infowindow = new google.maps.InfoWindow();
     var service = new google.maps.places.PlacesService(map);
     service.nearbySearch({
         location: myLocation,
@@ -48,7 +50,7 @@ function processResults(results, status, pagination) {
     } else {
         for (var i = 0; i < results.length; i++){
             createMarkers(results);
-    }
+        }
     }
 }
 

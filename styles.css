@@ -5,7 +5,7 @@
     background-color: #ABCDEF;
 }
 .navbar ul {
-    list-style-type: none; /*to remove bullets*/
+    list-style-type: none;
     text-align: center;
     margin: 0px;
     padding: 0px;
@@ -22,5 +22,5 @@
 .container{
     height: 800px;
     width: 800px;
-    background-image: url("health-care-background_23-2147514433.jpg");
+    background-image: url("webpages/health-care-background_23-2147514433.jpg");
 }

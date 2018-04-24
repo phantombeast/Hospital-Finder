@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hospital</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="../styles.css">
+
+    <style>
+        div.container {
+            width: 100%;
+            border: 1px solid gray;
+        }
+
+        header, footer {
+            padding: 1em;
+            color: white;
+            background-color: black;
+            clear: left;
+            text-align: center;
+        }
+
+        nav {
+            float: left;
+            max-width: 160px;
+            margin: 0;
+            padding: 1em;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul a {
+            text-decoration: none;
+        }
+
+        article {
+            margin-left: 170px;
+            border-left: 1px solid gray;
+            padding: 1em;
+            overflow: hidden;
+        }
+
+    </style>
+</head>
+
+<body>
+
+
+<!--<div  ><div class="inner"></div>-->
+
+    <!--<div  class="navbar"><ul  class="menu">-->
+        <!--<li id="menu-item-223"><a href="/">Home</a></li>-->
+
+        <!--<li><a href="http://stillpointesanctuary.org/help/">About Us</a></li>-->
+        <!--<li><a href="http://stillpointesanctuary.org/about/">Experience</a></li>-->
+        <!--<li><a href="http://stillpointesanctuary.org/llamas-animals/">Stay Fit</a></li>-->
+        <!--<li><a href="http://stillpointesanctuary.org/store/">Health Mantra</a></li>-->
+        <!--<li><a href="http://stillpointesanctuary.org/category/news-events/"></a></li>-->
+
+        <!--<li><a href="http://stillpointesanctuary.org/contact/">SignIn</a></li>-->
+        <!--<li><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&#038;hosted_button_id=8YYKCKNJ92WPJ">SignUp</a></li>-->
+    <!--</ul></div>-->
+
+
+    <div class="w3-top">
+        <div class="w3-bar w3-black w3-card">
+            <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+            <a href="index.html" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+            <a href="experience.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Experience</a>
+            <a href="stayfit.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Stay Fit</a>
+            <a href="healthmantra.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Health Mantra</a>
+            <a href="contactus.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Contact Us</a>
+            <div class="w3-dropdown-hover w3-hide-small">
+                <button class="w3-padding-large w3-button" title="More">Ambulance Locataor <i class="fa fa-caret-down"></i></button>
+                <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                    <a href="js/main.html" class="w3-bar-item w3-button">Near your Area</a>
+                    <a href="js/main1.html" class="w3-bar-item w3-button">Enter a particular Location</a>
+
+                </div>
+            </div>
+            <a href="signin.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Sign In</a>
+            <a href="signup.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Sign Up</a>
+
+            <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
+        </div>
+    </div>
+
+
+
+    <div style="">
+    <div class="mySlides w3-display-container w3-center">
+        <img src="7067.jpg" style="width: 100%; height: 650px">
+        <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+            <h3>Health is Important</h3>
+            <p><b>Please keep yourself and your Family Healthy</b></p>
+        </div>
+    </div>
+    <div class="mySlides w3-display-container w3-center">
+        <img src="7072.jpg" style="width: 100%; height: 650px">
+        <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+            <h3>More Important than Money</h3>
+            <p><b>Money can buy you Happiness but not health</b></p>
+        </div>
+    </div>
+    <div class="mySlides w3-display-container w3-center">
+        <img src="7086.jpg" style="width: 100%; height: 650px ;">
+        <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+            <h3 style="color: black">Regular Checkup</h3>
+            <p style="color: black"><b>Keep yourself up tp date with regular health checkup</b></p>
+        </div>
+    </div>
+    </div>
+</div>
+
+
+<div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
+    <h2 class="w3-wide">HealthCare Center</h2>
+    <p class="w3-opacity"><i>We Care for You</i></p>
+    <p class="w3-justify">
+        We HealthCare Center provide you the benifits of health and we make sure that everyone is updated with the latest health trends and we also provide you the details and help you to find the nearest hospital and  ambulance in your location
+        <div class="w3-row w3-padding-32">
+        <div class="w3-third">
+
+        </div>
+        </div>
+</div>
+
+<div class="container">
+
+    <header>
+        <h1>Ambulance Locator</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a >Near Your Location </a></li>
+            <li><a >Location of your Choice</a></li>
+
+        </ul>
+    </nav>
+
+    <article>
+        <h1>How to use it</h1>
+       <p> Just the select the option from the NavBAr as the ambulance locator and select the option of your choice wether you</p>
+        <p> want the Ambulance near your location or you want it at any other location</p>
+    </article>
+
+    <footer>Happy to Help You :)</footer>
+
+</div>
+
+
+
+<script>
+
+    var myIndex = 0;
+    carousel();
+
+    function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) {myIndex = 1}
+        x[myIndex-1].style.display = "block";
+        setTimeout(carousel, 4000);
+    }
+
+
+    function myFunction() {
+        var x = document.getElementById("navDemo");
+        if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+        } else {
+            x.className = x.className.replace(" w3-show", "");
+        }
+    }
+
+
+    var modal = document.getElementById('ticketModal');
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+</script>
+</body>
+</html>
